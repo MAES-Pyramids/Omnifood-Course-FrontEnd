@@ -28,7 +28,7 @@
 }
 body {
   color: #555;
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 1;
 }
@@ -66,7 +66,7 @@ html {
 }
 .btn:link,
 .btn:visited {
-  display: inline;
+  display: inline-block;
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
@@ -100,4 +100,32 @@ html {
 }
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+.delivered-img {
+  display: flex;
+}
+.delivered-img img {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  margin-left: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+.delivered-img img :last-child {
+  margin: 0;
+}
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
 }
