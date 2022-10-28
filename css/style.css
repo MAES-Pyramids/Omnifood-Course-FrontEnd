@@ -2,8 +2,14 @@
 1- TYPOGRAPHY SYSTEM
   - Font sizes (px) :  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
   - Font weights Default = 400 --- 
-  - Line heights : Default = 1 --- 
-  - Letter spacing
+  400
+  500
+  600
+  700
+  - Line heights : Default = 1 ---
+   1.05 
+   1.6 
+  - Letter spacing 
 
 2-Colors 
   -Primary #e67e22
@@ -15,12 +21,15 @@
 #333
 3-Shadows
 
-4-Border-Radius
+4-Border-Radius 
+9px
 
 5-White Spaces
   -Spacing System: 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
+/* ************************ */
+/* General Reusable styles */
 * {
   padding: 0;
   margin: 0;
@@ -35,20 +44,6 @@ body {
 html {
   font-size: 62.5%;
 }
-.hero-section {
-  background-color: #fdf2e9;
-  padding: 6.2rem;
-}
-
-.hero {
-  max-width: 130rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 6.2rem;
-
-  margin: 0 auto;
-}
 .hero-primary-heading {
   color: #333;
   font-size: 5.2rem;
@@ -58,12 +53,7 @@ html {
 
   margin-bottom: 3.2rem;
 }
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.5;
 
-  margin-bottom: 4.8rem;
-}
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -95,11 +85,90 @@ html {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px white;
 }
-.hero-img {
-  width: 100%;
-}
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+/* ------------------------ */
+
+/* ************************ */
+/* Header*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fdf2e9;
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+.nav-logo {
+  height: 2.2rem;
+}
+
+/* ------------------------ */
+
+/* ************************ */
+/* Navigation*/
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #333;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  transition: 0.3 ease;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+.main-nav-link.main-nav-link-cta:link,
+.main-nav-link.main-nav-link-cta:visited {
+  background-color: #e67e22;
+  color: white;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+}
+
+.main-nav-link.main-nav-link-cta:hover,
+.main-nav-link.main-nav-link-cta:active {
+  background-color: #cf711f;
+}
+/* ------------------------ */
+
+/* ************************ */
+/*Hero*/
+.hero-section {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 6.2rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 6.2rem;
+
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+
+  margin-bottom: 4.8rem;
+}
+.hero-img {
+  width: 100%;
 }
 .delivered-meals {
   display: flex;
@@ -129,3 +198,5 @@ html {
   color: #cf711f;
   font-weight: 700;
 }
+
+/* ------------------------ */
