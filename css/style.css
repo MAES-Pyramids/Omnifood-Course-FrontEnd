@@ -46,11 +46,20 @@
 /* ************************ */
 /* Navigation*/
 /* ************************ */
-.main-nav-list {
-  list-style: none;
+.Khadra-effects {
+  position: relative;
+  display: block;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  justify-content: center;
+  padding: 1rem;
+}
+.main-nav-list {
+  list-style: none;
+  display: block;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
@@ -138,6 +147,7 @@
 /* ************************ */
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
+  box-shadow: 0 0 35px rgba(248, 240, 232, 0.8);
 }
 .heading-featured-in {
   color: #888;
@@ -182,7 +192,7 @@
   justify-content: center;
 }
 .step-img-box img {
-  width: 35%;
+  width: 40%;
 }
 .step-img-box::before,
 .step-img-box::after {
@@ -197,17 +207,131 @@
 }
 .step-img-box::before {
   background-color: #fdf2e9;
-  padding-bottom: 60%;
-  width: 60%;
+  padding-bottom: 65%;
+  width: 65%;
   z-index: -2;
 }
 .step-img-box::after {
   background-color: #fae5d3;
-  padding-bottom: 45%;
-  width: 45%;
+  padding-bottom: 50%;
+  width: 50%;
   z-index: -1;
 }
 /* ************************ */
-/* Meals */
+/* Meals Sections */
 
 /* ************************ */
+.meals-section {
+  padding: 9.6rem 0;
+}
+.heading-secondary span {
+  color: #c17533;
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.meal {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.meal:hover {
+  transform: translateY(-1.4rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+.meal-img {
+  width: 100%;
+}
+.meal-content {
+  padding: 4.2rem;
+  padding-top: 3.2rem;
+}
+.meal-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+.tag {
+  color: #333;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+}
+.meal-tag-vegetarian {
+  background-color: #51cf66;
+}
+.meal-tag-Vegan {
+  background-color: #94d82d;
+}
+.meal-tag-Paleo {
+  background-color: #ffd43b;
+}
+.meal-title {
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+ion-icon {
+  font-size: 2.4rem;
+  color: #e67e22;
+}
+
+.diet-list {
+  padding-left: 1.2rem;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-icon {
+  font-size: 3rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.all-meals {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+.link:link,
+.link:visited {
+  color: #e67e22;
+  display: inline-block;
+  padding-bottom: 2px;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: 0.3s;
+}
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
