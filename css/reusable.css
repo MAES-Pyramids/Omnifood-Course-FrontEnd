@@ -35,6 +35,9 @@ html {
 .grid--4-columns {
   grid-template-columns: repeat(4, 1fr);
 }
+.grid--center-v {
+  align-items: center;
+}
 
 /* .hero-primary-heading {
   color: #333;
@@ -72,6 +75,15 @@ html {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
+}
+.subheading {
+  color: #cf711f;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  margin-bottom: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .btn:link,

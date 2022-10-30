@@ -13,7 +13,7 @@
 
 2-Colors 
   -Primary #e67e22
-  -Tints   #fdf2e9
+  -Tints   #fdf2e9  #fae5d3
   -Shades  #cf711f
   -Accents 
   -Gray
@@ -159,10 +159,55 @@
   opacity: 50%;
 }
 /* ************************ */
-/* ************************ */
 /* How It Work */
 /* ************************ */
 .how-works {
-  padding: 6.9rem 0;
+  padding: 9.6rem 0;
 }
+.step-number {
+  color: #ddd;
+  font-size: 8.6rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.step-img-box {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-img-box img {
+  width: 35%;
+}
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+.step-img-box::before {
+  background-color: #fdf2e9;
+  padding-bottom: 60%;
+  width: 60%;
+  z-index: -2;
+}
+.step-img-box::after {
+  background-color: #fae5d3;
+  padding-bottom: 45%;
+  width: 45%;
+  z-index: -1;
+}
+/* ************************ */
+/* Meals */
+
 /* ************************ */
