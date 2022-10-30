@@ -17,8 +17,8 @@
   width: 100%;
   height: 100%;
 }
+
 .Khadra-effect::after {
-  /* e98b38 */
   border-color: wheat;
   border-width: 0.3rem 0px;
   transform: scale3d(0, 1, 1);
@@ -31,12 +31,13 @@
   transform: scale3d(1, 1, 1);
   transform: translate(-50%, -50%);
 }
-.Khadra-effect:hover:after {
+/* .Khadra-effect:hover:after {
   transform: scale3d(2, 2, 2);
   transform: translate(-50%, -50%);
-}
-.Khadra-effect:active::before,
-.Khadra-effect:active:after {
+} */
+
+.Khadra-effect:active:after,
+.Khadra-effect:active::before {
   transform: scale3d(2, 2, 2);
   transform: translate(-50%, -50%);
   border-color: #e98b38;

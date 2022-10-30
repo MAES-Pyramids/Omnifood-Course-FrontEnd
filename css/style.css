@@ -219,7 +219,6 @@
 }
 /* ************************ */
 /* Meals Sections */
-
 /* ************************ */
 .meals-section {
   padding: 9.6rem 0;
@@ -300,21 +299,6 @@ ion-icon {
 .diet-list {
   padding-left: 1.2rem;
 }
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-.list-icon {
-  font-size: 3rem;
-}
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
 
 .all-meals {
   display: flex;
@@ -337,6 +321,7 @@ ion-icon {
 }
 /**************************/
 /* TESTIMONIALS SECTION */
+/**************************/
 .section-testimonials {
   background-color: #fdf2e9;
   grid-template-columns: 55fr 45fr;
@@ -391,5 +376,49 @@ ion-icon {
 }
 .gallery-item img:hover {
   transform: scale(1.1);
+}
+/**************************/
+/* Pay-plan*/
+.pricing-section {
+  padding: 9.6rem 0;
+}
+.x-mark {
+  color: #e67e22;
+  width: 2.4rem;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-left: 0.6rem;
+}
+.plan-description {
+  color: #6f6f6f;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.sign-action {
+  margin-top: 4.8rem;
 }
 /**************************/
