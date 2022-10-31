@@ -510,3 +510,49 @@ ion-icon {
   font-size: 1.8rem;
   line-height: 1.8;
 }
+/**************************/
+/* Pay-Plans*/
+.cta-section {
+  padding: 9.6rem 0;
+}
+.cta {
+  background-image: linear-gradient(to bottom right, #eea564, #e67e22);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 11px;
+  height: 50rem;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+.cta-text {
+  text-align: justify;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.cta-image {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(238, 164, 99, 0.25),
+      rgba(230, 125, 34, 0.3)
+    ),
+    url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+/**************************/
