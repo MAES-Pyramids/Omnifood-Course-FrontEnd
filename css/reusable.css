@@ -6,6 +6,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
 body {
   color: #555;
   font-family: "Rubik", sans-serif;
@@ -90,7 +94,7 @@ html {
   font-size: 1.6rem;
   font-weight: 600;
 }
-
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -101,6 +105,9 @@ html {
   border-radius: 9px;
 
   transition: 0.3s ease;
+
+  border: hidden;
+  cursor: pointer;
 }
 .focused-btn:link,
 .focused-btn:visited {

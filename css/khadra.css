@@ -1,3 +1,7 @@
+.Khadra-effects .Khadra-effect:focus {
+  box-shadow: none;
+}
+
 .Khadra-effect::after,
 .Khadra-effect::before {
   position: absolute;
@@ -35,7 +39,8 @@
   transform: scale3d(2, 2, 2);
   transform: translate(-50%, -50%);
 } */
-
+.Khadra-effect:focus:after,
+.Khadra-effect:focus::before,
 .Khadra-effect:active:after,
 .Khadra-effect:active::before {
   transform: scale3d(2, 2, 2);

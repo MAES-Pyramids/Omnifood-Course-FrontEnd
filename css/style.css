@@ -520,7 +520,6 @@ ion-icon {
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-radius: 11px;
-  height: 50rem;
 
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -554,5 +553,43 @@ ion-icon {
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
+}
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form select,
+.cta-form input {
+  background-color: #fdf2e9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.8rem;
+  width: 100%;
+  padding: 1.2rem;
+  border: hidden;
+  border-radius: 9px;
+}
+.cta-form input::placeholder {
+  color: #aaa;
+}
+.cta-form select {
+}
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: flex-end;
+  padding: 1.2rem;
+}
+.btn--form:hover {
+  background-color: #fdf2e9;
+  color: #45260a;
+}
+.cta-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
 /**************************/
