@@ -386,6 +386,7 @@ ion-icon {
   text-align: center;
   border-radius: 11px;
   width: 75%;
+  line-height: 1.2;
 }
 .pricing-plan--start {
   justify-self: end;
@@ -411,7 +412,8 @@ ion-icon {
 }
 .pricing-plan--complete {
   background-color: #fdf2e9;
-  padding: 4.8rem;
+  padding: 4.6rem;
+  border: 2px solid transparent;
   position: relative;
   overflow: hidden;
 }
