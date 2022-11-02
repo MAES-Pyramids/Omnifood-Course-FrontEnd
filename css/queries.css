@@ -31,3 +31,51 @@
     grid-row: 4;
   }
 }
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonials-container {
+    padding: 2.4rem 3.2rem;
+  }
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-4 {
+    grid-column: 1;
+  }
+  .testimonial-8 {
+    grid-column: 1;
+  }
+}
