@@ -200,6 +200,11 @@
     visibility: hidden;
   }
 
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .main-nav-list {
     flex-direction: column;
     gap: 4.8rem;
