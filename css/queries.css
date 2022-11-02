@@ -1,0 +1,33 @@
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonials-container {
+    padding: 6.4rem 3.2rem;
+  }
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .testimonial-4 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .testimonial-5 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .testimonial-8 {
+    grid-column: 2;
+    grid-row: 4;
+  }
+}
