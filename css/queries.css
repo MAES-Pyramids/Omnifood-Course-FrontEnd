@@ -224,3 +224,52 @@
     display: none;
   }
 }
+@media (max-width: 50.25em) {
+  .add-margin-top {
+    margin-bottom: 1.8rem;
+  }
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .add-margin-top {
+    margin-bottom: 0rem;
+  }
+
+  .grid--3-columns,
+  .grid--4-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diet-list {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-column,
+  .account-column {
+    grid-column: span 3;
+  }
+
+  .company-column,
+  .resources-column,
+  .contact-column {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
