@@ -104,8 +104,8 @@ const lazyLoadingObserver = new IntersectionObserver(lazyLoad, {
 lazyLoadingObserver.observe(image);
 
 //Images Pixelation
-const lazySection = document.querySelector(".how-works");
 const lazyImage = document.querySelector("img[data-src]");
+const lazySection = document.querySelector(".how-works");
 const clearSection = document.querySelector(".hero-section");
 
 function lazyUnload(entries, observer) {
@@ -115,7 +115,7 @@ function lazyUnload(entries, observer) {
 }
 const lazySectionsObserver = new IntersectionObserver(lazyUnload, {
   root: null,
-  threshold: 0.2,
+  threshold: 0.25,
 });
 lazySectionsObserver.observe(lazySection);
 
