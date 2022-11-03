@@ -128,12 +128,12 @@
           </div>
           <div class="hero-img-box">
             <picture>
-              <source srcset="img/hero.webp" type="image/webp" />
-              <source srcset="img/hero-min.png" type="image/png" />
-
+              <source data-srcset="img/hero.webp" type="image/webp" />
+              <source data-srcset="img/hero-min.png" type="image/png" />
               <img
-                src="img/hero-min.png"
-                class="hero-img"
+                src="img/hero Compressed.webp"
+                data-src="img/hero.webp"
+                class="hero-img lazy-img"
                 alt="Woman enjoying food, meals in storage container, and food bowls on a table"
               />
             </picture>

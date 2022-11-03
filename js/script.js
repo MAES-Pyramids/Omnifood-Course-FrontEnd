@@ -81,8 +81,51 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
+  console.log(`Flexbox gap property is ${isSupported}`);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+///////////////////////////////////////////////////////////
+// Lazy loading images
+const image = document.querySelector(".hero-img");
+function lazyLoad(entries, observer) {
+  const [entire] = entries;
+  if (!entire.isIntersecting) return;
+  entire.target.src = entire.target.dataset.src;
+  entire.target.addEventListener("load", () => {
+    entire.target.classList.remove("lazy-img");
+  });
+}
+const lazyLoadingObserver = new IntersectionObserver(lazyLoad, {
+  root: null,
+  threshold: 0.2,
+});
+lazyLoadingObserver.observe(image);
+
+//Images Pixelation
+const lazySection = document.querySelector(".how-works");
+const lazyImage = document.querySelector("img[data-src]");
+const clearSection = document.querySelector(".hero-section");
+
+function lazyUnload(entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  lazyImage.classList.add("lazy-img");
+}
+const lazySectionsObserver = new IntersectionObserver(lazyUnload, {
+  root: null,
+  threshold: 0.2,
+});
+lazySectionsObserver.observe(lazySection);
+
+function lazyload(entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  lazyImage.classList.remove("lazy-img");
+}
+const clearSectionsObserver = new IntersectionObserver(lazyload, {
+  root: null,
+  threshold: 0.5,
+});
+clearSectionsObserver.observe(clearSection);
