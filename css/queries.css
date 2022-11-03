@@ -252,8 +252,16 @@
   .diet-list {
     grid-column: 1 / -1;
     justify-self: center;
+    padding: 0;
   }
-
+  .diet-list .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+  .diet-list .list-item {
+    gap: 0.2rem;
+  }
   .heading-secondary {
     margin-bottom: 4.8rem;
   }

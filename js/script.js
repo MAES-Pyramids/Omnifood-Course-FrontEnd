@@ -14,17 +14,6 @@ btnNav.addEventListener("click", (e) => {
   header.classList.toggle("nav-open");
 });
 
-// const navLinks = document.querySelectorAll(".main-nav-link");
-// navLinks.forEach((link) => {
-//   link.addEventListener("click", (e) => {
-// if (link.classList.contains("main-nav-link-cta")) {
-//   e.preventDefault();
-// }
-
-//     header.classList.remove("nav-open");
-//   });
-// });
-
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation
 const allLinks = document.querySelectorAll("a:link");
@@ -35,10 +24,12 @@ allLinks.forEach((link) => {
 
     // Scroll back to top
     if (href == "#") {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+      // window.scrollTo({
+      //   top: 0,
+      //   behavior: "smooth",
+      // });
+      const section = document.querySelector(".top");
+      section.scrollIntoView({ behavior: "smooth" });
     }
     // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
@@ -49,7 +40,6 @@ allLinks.forEach((link) => {
     }
 
     // Close mobile navigation
-
     if (link.classList.contains("main-nav-link"))
       header.classList.remove("nav-open");
   });
@@ -57,6 +47,25 @@ allLinks.forEach((link) => {
 
 ///////////////////////////////////////////////////////////
 // Sticky navigation
+const sectionHeader = document.querySelector(".hero-section");
+const observer = new IntersectionObserver(
+  (entries) => {
+    const ent = entries[0];
 
+    if (!ent.isIntersecting) {
+      document.body.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-85px",
+  }
+);
+observer.observe(sectionHeader);
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
