@@ -40,4 +40,5 @@
 
 ### Note: FeedMe Site is responsive for Main Desktops, Smaller desktops, Landscape Tablets, Upright Tablets, Phones
 
-####You can view the hosted version of the Portfolio website by pressing[Here](https://feedme-maes.netlify.app/)
+#### You can view the website hosted version on Git-Hup Pages by pressing[Here](https://github.com/MAES-Pyramids?tab=repositories)
+#### You can view the website hosted version on Netlify by pressing[Here](https://feedme-maes.netlify.app/)
