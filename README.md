@@ -40,5 +40,5 @@
 
 ### Note: FeedMe Site is responsive for Main Desktops, Smaller desktops, Landscape Tablets, Upright Tablets, Phones
 
-#### You can view the website hosted version on Git-Hup Pages by pressing [Here](https://maes-pyramids.github.io/FeedMe-Course-FrontEnd/)
+#### You can view the website hosted version on Git-Hup Pages by pressing [Here](https://maes-pyramids.github.io/Omnifood-Course-FrontEnd/)
 #### You can view the website hosted version on Netlify by pressing [Here](https://feedme-maes.netlify.app/)
